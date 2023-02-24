@@ -1,15 +1,23 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_alphabet - print all alphabet in lowercase
+ *main - causes an infinite loop
+ *Return: 0
  */
 
-void print_alphabet(void)
+int main(void)
 {
-	char letter;
+	int i;
+	printf(infinite loop incoming :(\n");
+	
+	i = 0
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
+	/*while (i< 10)*/
+	/*{*/
+	/*
+	        putchar(i),*/
+	/*}*/
+	printf("infinite loop avoided! \\o^n");
 
-	_putchar('\n');
+	return (0);
 }
