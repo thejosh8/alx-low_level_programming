@@ -1,16 +1,29 @@
 #include "main.h"
-
 /**
- * add - adds two integers and returns the result
- * @a: int to be added to b
- * @b: int to be added to a
- * Return: sum of a and b
- */
-int add(int a, int b)
+* largest_number - returns the largest of 3 numbers
+* @a: first integer
+* @b: second integer
+* @c: third integer
+* Return: largest number
+*/
+int largest_number(int a, int b, int c)
 {
-	int c;
-
-	c = a + b;
-
-	return (c);
+int largest;
+if (a > b && a > c)
+{
+largest = a;
+}
+else if (a > b && c > a)
+{
+largest = c;
+}
+else if (b > c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+return (largest);
 }
